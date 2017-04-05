@@ -7,10 +7,10 @@ gem "dm-postgres-adapter"
 gem 'pry'
 gem 'sinatra'
 gem 'data_mapper'
+gem 'database_cleaner'
 
 group :test do
   gem 'rspec'
-  gem 'database_cleaner'
   gem 'capybara'
   gem 'selenium-webdriver'
 end
