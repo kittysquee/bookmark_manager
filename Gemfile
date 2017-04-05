@@ -6,10 +6,7 @@ ruby '2.3.3'
 gem "dm-postgres-adapter"
 gem 'pry'
 gem 'sinatra'
-
-group :development, :test do
-  gem 'data_mapper'
-end
+gem 'data_mapper'
 
 group :test do
   gem 'rspec'
