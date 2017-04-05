@@ -4,7 +4,6 @@ source "https://rubygems.org"
 ruby '2.3.3'
 
 gem "dm-postgres-adapter"
-gem 'pry'
 gem 'sinatra'
 gem 'data_mapper'
 gem 'database_cleaner'
