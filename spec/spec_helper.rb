@@ -14,6 +14,8 @@
 #
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.
+ENV['RACK_ENV'] = 'test'
+
 require './app/models/link'
 require 'capybara/rspec'
 require './app/app'

@@ -3,12 +3,17 @@ source "https://rubygems.org"
 
 ruby '2.4.0'
 
-# gem "rails
-gem "rspec", group: :test
-gem "data_mapper"
 gem "dm-postgres-adapter"
-gem "capybara", group: :test
-gem "selenium-webdriver"
 gem 'pry'
 gem 'sinatra'
-gem 'database_cleaner'
+
+group :development, :test do
+  gem 'data_mapper'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+end
