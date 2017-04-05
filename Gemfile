@@ -6,14 +6,12 @@ ruby '2.4.0'
 gem "dm-postgres-adapter"
 gem 'pry'
 gem 'sinatra'
-
-group :development, :test do
-  gem 'data_mapper'
-end
+gem 'database_cleaner'
+gem 'data_mapper'
+gem 'selenium-webdriver'
 
 group :test do
   gem 'rspec'
-  gem 'database_cleaner'
   gem 'capybara'
-  gem 'selenium-webdriver'
+
 end
