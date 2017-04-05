@@ -1,7 +1,6 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
-require './model/setup.rb'
-require 'dm-migrations'
+# require 'dm-migrations'
 
 
 class Link
@@ -14,7 +13,7 @@ class Link
 end
 
 
-  DataMapper::Logger.new($stdout, :debug)
+  # DataMapper::Logger.new($stdout, :debug)
   DataMapper.setup(:default, 'postgres://localhost/bookmark_manager_test')
   DataMapper.finalize
   DataMapper.auto_upgrade!
