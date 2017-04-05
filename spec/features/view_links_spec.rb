@@ -1,4 +1,3 @@
-require 'pry'
 
 feature 'view links' do
   scenario 'see links on homepage' do
