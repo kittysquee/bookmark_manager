@@ -115,6 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   capybara
   data_mapper
   database_cleaner
@@ -122,9 +123,6 @@ DEPENDENCIES
   rspec
   selenium-webdriver
   sinatra
-
-RUBY VERSION
-   ruby 2.3.3p222
 
 BUNDLED WITH
    1.14.6
