@@ -2,7 +2,6 @@ require 'data_mapper'
 require 'dm-postgres-adapter'
 # require 'dm-migrations'
 
-
 class Link
   include DataMapper::Resource
 
@@ -11,7 +10,6 @@ class Link
   property :url, String
 
 end
-
 
   # DataMapper::Logger.new($stdout, :debug)
   DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bookmark_manager_#{ENV['RACK_ENV']}")
