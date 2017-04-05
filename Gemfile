@@ -11,3 +11,4 @@ gem "capybara", group: :test
 gem "selenium-webdriver"
 gem 'pry'
 gem 'sinatra'
+gem 'database_cleaner'
