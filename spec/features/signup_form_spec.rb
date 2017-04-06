@@ -4,4 +4,18 @@ feature 'Signup Form' do
     expect(page).to have_content('Welcome freddy@freddy.com')
     expect(User.first.email).to eq('freddy@freddy.com')
   end
+
+  scenario 'Requires matching confirmation password' do
+    expect { sign_up(password_confirmation: 'wrong') }.not_to change(User, :count)
+  end
+
+  def sign_up(email: 'freddy@freddy.com',
+              password: 'freddy',
+              password_confirmation: 'freddy' )
+    visit 'users/new'
+    fill_in :email, with: email
+    fill_in :password, with: password
+    fill_in :password_confirmation, with: password_confirmation
+    click_button 'Complete Registration'
+  end
 end
